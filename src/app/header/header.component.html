@@ -1,0 +1,18 @@
+<header>
+  <div class="brand">
+    <img src="/assets/images/brand.png" alt="avatar" />
+    <h5>Shop</h5>
+  </div>
+  <div class="nav">
+    <ul>
+      <li>
+        <img src="/assets/images/add-to-cart.png" alt="cart" />
+        <span class="badge" *ngIf="cart.length > 0">{{ cart.length }} </span>
+      </li>
+      <li>
+        <span class="badge" *ngIf="cart.length > 0"> {{totalPurchaseVal}}</span>
+      </li>
+
+    </ul>
+  </div>
+</header>
